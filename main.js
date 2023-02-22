@@ -29,4 +29,4 @@ stopButton.addEventListener("click", function() {
 clearInterval(stop); addition = progress; startButton.disabled = false; stopButton.disabled = true; resetButton.disabled = false; });
 
 resetButton.addEventListener("click", function() {
-clearInterval(stop); progress = 0; record.textContent = "0:0:0:0"; addition = 0; startButton.disabled = false; stopButton.disabled = true; resetButton.disabled = true; });
+clearInterval(stop); progress = 0; record.textContent = "00:00:00:00"; addition = 0; startButton.disabled = false; stopButton.disabled = true; resetButton.disabled = true; });
