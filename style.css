@@ -1,5 +1,56 @@
-.time {text-align:center}
-.counter {font-size:xx-large;margin-top:.83em;margin-bottom:.83em}
-h3{
-    text-align: center
+table {
+      /* 電卓のサイズ */
+      width: 400px;
+      height: 500px;
+      margin:auto;
 }
+
+    input {
+      /* ボタンのサイズ */
+      width: 90px;
+      height: 90px;
+      /* ボタンの文字サイズ */
+      font-size: 30px;
+      /* 数字部分の背景色 */
+      background-color:#808080;
+      /* ボタンの詳細設定 */
+      border: none;
+      /* クリック時の黒枠を消す */
+      outline: none;
+    }
+   
+    /* ディスプレイの詳細設定 */
+    .display {
+      width: 270px;
+      margin: 0;
+      padding: 0;
+      text-align: right; /* 文字を右詰めに */
+      /* 見た目の詳細設定 */
+      background: #ffffff;
+      border: solid #000 1px;
+     box-sizing: border-box
+    }
+  
+    /* 演算子の背景色を上書きで設定 記号＝の部分の背景色を上書きで設定 */
+    .operator .equal{
+      background-color: #808080;
+    }
+    
+    /* カーソルを上に乗せた時に色を濃くする */
+    input:hover {
+      background: #747373;
+    }
+    .display:hover {
+      background: #fff; /* ディスプレイ部分は無効化 */
+    }
+    .operator .equal:hover {
+      background: #747373;
+    }
+ 
+    /* クリック時に色を濃くする */
+    input:active {
+      background:  #fff;
+    }
+    .operator:active {
+      background: #fff;
+    }
