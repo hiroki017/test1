@@ -56,5 +56,6 @@ function equal_click(){
 
 // 入力されている値が演算子かどうか
 function is_ope_last(){
-  return ["+","-","×","÷"].includes(result.value.toString().slice(-1));
-}   
+  return ["+","-","×","÷","."].includes(result.value.toString().slice(-1));
+} 
+
