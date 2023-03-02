@@ -1,56 +1,40 @@
-table {
-      /* 電卓のサイズ */
-      width: 400px;
-      height: 500px;
-      margin:auto;
+.wrapper{
+  max-width: 400px;
+  margin: 0 auto;
+  height: 500px;
+  color: #808080;
+}
+.calc{
+  box-sizing: border-box;
+  text-align: center;
 }
 
-    input {
-      /* ボタンのサイズ */
-      width: 90px;
-      height: 90px;
-      /* ボタンの文字サイズ */
-      font-size: 30px;
-      /* 数字部分の背景色 */
-      background-color:#808080;
-      /* ボタンの詳細設定 */
-      border: none;
-      /* クリック時の黒枠を消す */
-      outline: none;
-    }
-   
-    /* ディスプレイの詳細設定 */
-    .display {
-      width: 270px;
-      margin: 0;
-      padding: 0;
-      text-align: right; /* 文字を右詰めに */
-      /* 見た目の詳細設定 */
-      background: #ffffff;
-      border: solid #000 1px;
-     box-sizing: border-box
-    }
-  
-    /* 演算子の背景色を上書きで設定 記号＝の部分の背景色を上書きで設定 */
-    .operator .equal{
-      background-color: #808080;
-    }
-    
-    /* カーソルを上に乗せた時に色を濃くする */
-    input:hover {
-      background: #747373;
-    }
-    .display:hover {
-      background: #fff; /* ディスプレイ部分は無効化 */
-    }
-    .operator .equal:hover {
-      background: #747373;
-    }
- 
-    /* クリック時に色を濃くする */
-    input:active {
-      background:  #fff;
-    }
-    .operator:active {
-      background: #fff;
+h1 {
+  font-size: 24px;
+}
+
+input{
+  box-sizing: border-box;
+  width: 62%;
+  height: 3.5rem;
+  font-size: 1.6rem;
+  text-align: right;
+  padding: 0 0.75rem;
+}
+
+button{
+  font-size: 18px;
+  width: 20%;
+  height: 3.5rem;
+  color: #000;
+  vertical-align: middle;
+  border-color: #fff;
+}
+
+button:hover{
+  background-color: #747373;
+}
+
+button:active {
+      background:  #fd7e00;
     }
